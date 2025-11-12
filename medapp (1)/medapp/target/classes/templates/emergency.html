@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Emergency Contacts | Smart MedApp</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <style>
+        body {
+            background-color: #fff5f5;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #c62828;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2rem;
+        }
+
+        .container {
+            max-width: 700px;
+            margin: 40px auto;
+            padding: 20px;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+        }
+
+        .contact-card {
+            background-color: #ffebee;
+            border-left: 8px solid #d32f2f;
+            padding: 20px;
+            margin-bottom: 15px;
+            border-radius: 10px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+        }
+
+        .contact-card:hover {
+            transform: scale(1.02);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+        }
+
+        .contact-info h2 {
+            margin: 0;
+            font-size: 1.4rem;
+            color: #c62828;
+        }
+
+        .contact-info p {
+            margin: 5px 0 0;
+            font-size: 1.1rem;
+            color: #555;
+        }
+
+        .call-btn {
+            background-color: #c62828;
+            color: white;
+            border: none;
+            padding: 10px 18px;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+
+        .call-btn:hover {
+            background-color: #b71c1c;
+        }
+
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #999;
+        }
+
+        a.back-link {
+            display: inline-block;
+            margin-top: 20px;
+            text-decoration: none;
+            color: #c62828;
+            font-weight: bold;
+            font-size: 1.1rem;
+        }
+
+        a.back-link:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>🚨 Emergency Contact Numbers</h1>
+        <p>Your safety is our first priority</p>
+    </header>
+
+    <div class="container">
+        <div class="contact-card">
+            <div class="contact-info">
+                <h2>🚑 Ambulance</h2>
+                <p>Call: 102</p>
+            </div>
+            <button class="call-btn" onclick="callNumber('102')">Call Now</button>
+        </div>
+
+        <div class="contact-card">
+            <div class="contact-info">
+                <h2>🚓 Police</h2>
+                <p>Call: 100</p>
+            </div>
+            <button class="call-btn" onclick="callNumber('100')">Call Now</button>
+        </div>
+
+        <div class="contact-card">
+            <div class="contact-info">
+                <h2>🔥 Fire Department</h2>
+                <p>Call: 101</p>
+            </div>
+            <button class="call-btn" onclick="callNumber('101')">Call Now</button>
+        </div>
+
+        <div class="contact-card">
+            <div class="contact-info">
+                <h2>☎️ National Helpline</h2>
+                <p>Call: 112</p>
+            </div>
+            <button class="call-btn" onclick="callNumber('112')">Call Now</button>
+        </div>
+
+        <a href="/" class="back-link">⬅ Back to Home</a>
+    </div>
+
+    <footer>
+        <p>💊 Smart MedApp | Stay Safe, Stay Healthy</p>
+    </footer>
+
+    <script>
+        function callNumber(num) {
+            window.location.href = "tel:" + num;
+        }
+    </script>
+</body>
+
+</html>
+<!DOCTYPE html>

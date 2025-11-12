@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Smart MedApp</title>
+    <link rel="stylesheet" href="/css/style.css">
+</head>
+
+<body>
+    <header>
+        <div style="display: flex; justify-content: space-between; align-items: center;">
+            <div>
+                <h1>🩺 Smart Symptom Selector</h1>
+                <p>Select your symptom to get instant medicine recommendations</p>
+            </div>
+            <a href="/emergency" class="emergency-btn">🚨 Emergency</a>
+        </div>
+    </header>
+
+
+    <section class="symptom-grid">
+        <div class="symptom-card" onclick="selectSymptom('Fever')">
+            <img src="/css/images/fever.jpeg" alt="Fever">
+            <h3>Fever</h3>
+        </div>
+
+        <div class="symptom-card" onclick="selectSymptom('Headache')">
+            <img src="/css/images/cough.jpeg" alt="Headache">
+            <h3>Headache</h3>
+        </div>
+
+        <div class="symptom-card" onclick="selectSymptom('Body Pain')">
+            <img src="/css/images/bodypain.jpeg" alt="Body Pain">
+            <h3>Body Pain</h3>
+        </div>
+
+        <div class="symptom-card" onclick="selectSymptom('Back Pain')">
+            <img src="/css/images/backpain.jpeg" alt="Back Pain">
+            <h3>Back Pain</h3>
+        </div>
+
+        <div class="symptom-card" onclick="selectSymptom('Tooth Pain')">
+            <img src="/css/images/toothpain.jpeg" alt="Tooth Pain">
+            <h3>Tooth Pain</h3>
+        </div>
+
+        <div class="symptom-card" onclick="selectSymptom('Sore Throat')">
+            <img src="/css/images/sorethroat.jpeg" alt="Sore Throat">
+            <h3>Sore Throat</h3>
+        </div>
+
+        <div class="symptom-card" onclick="selectSymptom('Cough')">
+            <img src="/css/images/headache.jpeg" alt="Cough">
+            <h3>Cough</h3>
+        </div>
+
+        <div class="symptom-card" onclick="selectSymptom('Cold')">
+            <img src="/css/images/cold.jpeg" alt="Cold">
+            <h3>Cold</h3>
+        </div>
+
+        <div class="symptom-card" onclick="selectSymptom('Runny Nose')">
+            <img src="/css/images/running nose.jpeg" alt="Runny Nose">
+            <h3>Runny Nose</h3>
+        </div>
+
+        <div class="symptom-card" onclick="selectSymptom('Stomach Ache')">
+            <img src="/css/images/stomachache.jpeg" alt="Stomach Ache">
+            <h3>Stomach Ache</h3>
+        </div>
+
+        <div class="symptom-card" onclick="selectSymptom('Nausea')">
+            <img src="/css/images/nausea.jpeg" alt="Nausea">
+            <h3>Nausea</h3>
+        </div>
+
+        <div class="symptom-card" onclick="selectSymptom('Diarrhea')">
+            <img src="/css/images/diahreea.jpeg" alt="Diarrhea">
+            <h3>Diarrhea</h3>
+        </div>
+
+        <div class="symptom-card" onclick="selectSymptom('Constipation')">
+            <img src="/css/images/constipation.jpeg" alt="Constipation">
+            <h3>Constipation</h3>
+        </div>
+
+        <div class="symptom-card" onclick="selectSymptom('Dizziness')">
+            <img src="/css/images/diziness.jpeg" alt="Dizziness">
+            <h3>Dizziness</h3>
+        </div>
+
+        <div class="symptom-card" onclick="selectSymptom('Weakness')">
+            <img src="/css/images/weakness.jpeg" alt="Weakness">
+            <h3>Weakness</h3>
+        </div>
+
+        <div class="symptom-card" onclick="selectSymptom('Fatigue')">
+            <img src="/css/images/fatigue.jpeg" alt="Fatigue">
+            <h3>Fatigue</h3>
+        </div>
+
+        <div class="symptom-card" onclick="selectSymptom('Allergy')">
+            <img src="/css/images/allergy.jpeg" alt="Allergy">
+            <h3>Allergy</h3>
+        </div>
+
+        <div class="symptom-card" onclick="selectSymptom('Skin Rash')">
+            <img src="/css/images/skinrash.jpeg" alt="Skin Rash">
+            <h3>Skin Rash</h3>
+        </div>
+
+        <div class="symptom-card" onclick="selectSymptom('Itching')">
+            <img src="/css/images/itching.jpeg" alt="Itching">
+            <h3>Itching</h3>
+        </div>
+
+        <div class="symptom-card" onclick="selectSymptom('Eye Pain')">
+            <img src="/css/images/eyepain.jpeg" alt="Eye Pain">
+            <h3>Eye Pain</h3>
+        </div>
+
+        <div class="symptom-card" onclick="selectSymptom('Ear Pain')">
+            <img src="/css/images/earpain.jpeg" alt="Ear Pain">
+            <h3>Ear Pain</h3>
+        </div>
+
+        <div class="symptom-card" onclick="selectSymptom('Shortness of Breath')">
+            <img src="/css/images/shortbreath.jpeg" alt="Shortness of Breath">
+            <h3>Shortness of Breath</h3>
+        </div>
+
+        <div class="symptom-card" onclick="selectSymptom('Chest Pain')">
+            <img src="/css/images/chestpain.jpeg" alt="Chest Pain">
+            <h3>Chest Pain</h3>
+        </div>
+
+        <div class="symptom-card" onclick="selectSymptom('Insomnia')">
+            <img src="/css/images/insomia.jpeg" alt="Insomnia">
+            <h3>Insomnia</h3>
+        </div>
+
+        <div class="symptom-card" onclick="selectSymptom('Anxiety')">
+            <img src="/css/images/anxiety.jpeg" alt="Anxiety">
+            <h3>Anxiety</h3>
+        </div>
+
+        <div class="symptom-card" onclick="selectSymptom('Depression')">
+            <img src="/css/images/depression.jpeg" alt="Depression">
+            <h3>Depression</h3>
+        </div>
+
+        <div class="symptom-card" onclick="selectSymptom('Joint Pain')">
+            <img src="/css/images/jointpain.jpeg" alt="Joint Pain">
+            <h3>Joint Pain</h3>
+        </div>
+
+        <div class="symptom-card" onclick="selectSymptom('Menstrual Pain')">
+            <img src="/css/images/mpain.jpeg" alt="Menstrual Pain">
+            <h3>Menstrual Pain</h3>
+        </div>
+
+        <div class="symptom-card" onclick="selectSymptom('Urinary Pain')">
+            <img src="/css/images/uPain.jpeg" alt="Urinary Pain">
+            <h3>Urinary Pain</h3>
+        </div>
+
+        <div class="symptom-card" onclick="selectSymptom('Vomiting')">
+            <img src="/css/images/vomiting.jpeg" alt="Vomiting">
+            <h3>Vomiting</h3>
+        </div>
+
+        <div class="symptom-card" onclick="selectSymptom('Feeling Cold')">
+            <img src="/css/images/feeling cold.jpeg" alt="Feeling Cold">
+            <h3>Feeling Cold</h3>
+        </div>
+    </section>
+
+    <form id="recommendForm" th:action="@{/recommend}" method="get" class="hidden">
+        <input type="hidden" name="symptom" id="symptomInput">
+        <div class="age-input">
+            <label>Enter your age:</label>
+            <input type="number" name="age" required min="1" max="120">
+        </div>
+        <button type="submit" class="btn">Get Recommendations</button>
+    </form>
+
+    <footer>
+        <p>💊 Powered by Smart MedApp</p>
+    </footer>
+
+    <script>
+        function selectSymptom(symptom) {
+            document.querySelector('#symptomInput').value = symptom;
+            document.querySelector('#recommendForm').classList.remove('hidden');
+            window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+        }
+    </script>
+</body>
+
+</html>

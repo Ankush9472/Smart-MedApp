@@ -1,0 +1,167 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Medicine Recommendations</title>
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #eaf8f8;
+            margin: 0;
+            padding: 0;
+        }
+
+        header {
+            background-color: #00796b;
+            color: white;
+            text-align: center;
+            padding: 20px 0;
+            border-bottom-left-radius: 50px;
+            border-bottom-right-radius: 50px;
+        }
+
+        header h1 {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 10px;
+            font-size: 2rem;
+        }
+
+        header img {
+            width: 35px;
+        }
+
+        main {
+            text-align: center;
+            margin-top: 40px;
+            padding: 0 20px;
+        }
+
+        .symptom-info {
+            margin-bottom: 30px;
+            font-size: 1.1rem;
+            color: #004d40;
+        }
+
+        .card-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 30px;
+            margin-bottom: 40px;
+        }
+
+        .card {
+            background-color: #fff;
+            width: 320px;
+            border-radius: 16px;
+            padding: 20px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+        }
+
+        .card h3 {
+            color: #00796b;
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+        }
+
+        .dose-box {
+            background-color: #e0f2f1;
+            padding: 10px;
+            border-radius: 10px;
+            margin-top: 10px;
+            text-align: left;
+        }
+
+        .dose-box strong {
+            color: #004d40;
+        }
+
+        button {
+            background-color: #00796b;
+            color: white;
+            border: none;
+            border-radius: 30px;
+            padding: 12px 25px;
+            cursor: pointer;
+            font-size: 1rem;
+            transition: background-color 0.3s ease;
+        }
+
+        button:hover {
+            background-color: #004d40;
+        }
+
+        footer {
+            background-color: #004d40;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            border-top-left-radius: 50px;
+            border-top-right-radius: 50px;
+            font-size: 0.9rem;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>
+            <img src="https://cdn-icons-png.flaticon.com/512/2966/2966483.png" alt="icon" />
+            Medicine Recommendations
+        </h1>
+    </header>
+
+    <main>
+        <div class="symptom-info">
+            <p><strong>Symptom:</strong> Body Pain</p>
+
+        </div>
+
+        <div class="card-container">
+            <div class="card">
+                <h3>Ibuprofen</h3>
+                <p>NSAID for pain, fever, and inflammation.</p>
+                <div class="dose-box">
+                    <p><strong>Adult Dose:</strong> 200–400 mg every 4–6 hrs; max 1200 mg/day OTC.</p>
+                    <p><strong>Child Dose:</strong> 5–10 mg/kg every 6–8 hrs.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Paracetamol</h3>
+                <p>Pain reliever and fever reducer.</p>
+                <div class="dose-box">
+                    <p><strong>Adult Dose:</strong> 500–1000 mg every 4–6 hrs; max 4g/day.</p>
+                    <p><strong>Child Dose:</strong> 15 mg/kg every 4–6 hrs.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h3>Topical Analgesic Gel</h3>
+                <p>For localized muscle and joint pain.</p>
+                <div class="dose-box">
+                    <p><strong>Adult Dose:</strong> Apply as directed on packaging.</p>
+                    <p><strong>Child Dose:</strong> Apply as directed (check pediatric guidance).</p>
+                </div>
+            </div>
+        </div>
+
+        <button onclick="history.back()">⬅ Back</button>
+    </main>
+
+    <footer>
+        © Smart MedApp 2025
+    </footer>
+</body>
+
+</html>

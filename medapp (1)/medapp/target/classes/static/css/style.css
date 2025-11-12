@@ -1,0 +1,80 @@
+body {
+  font-family: "Poppins", sans-serif;
+  background: linear-gradient(to right, #e0f7fa, #fff);
+  color: #333;
+  text-align: center;
+  margin: 0;
+}
+
+header {
+  background-color: #00796b;
+  color: white;
+  padding: 20px;
+  border-radius: 0 0 25px 25px;
+}
+
+.symptom-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+  gap: 20px;
+  padding: 40px;
+}
+
+.symptom-card {
+  background: #fff;
+  border-radius: 15px;
+  padding: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+  cursor: pointer;
+  transition: transform 0.2s ease-in-out;
+}
+
+.symptom-card:hover {
+  transform: scale(1.05);
+}
+
+.symptom-card img {
+  width: 100%;
+  height: 130px;
+  object-fit: cover;
+  border-radius: 10px;
+}
+
+.hidden {
+  display: none;
+}
+
+.btn {
+  background-color: #00796b;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 10px;
+  border: none;
+  cursor: pointer;
+}
+
+.btn:hover {
+  background-color: #004d40;
+}
+
+footer {
+  margin-top: 40px;
+  padding: 10px;
+  background: #004d40;
+  color: white;
+  border-radius: 25px 25px 0 0;
+}
+
+.emergency-btn {
+  background-color: #e53935;
+  color: white;
+  text-decoration: none;
+  padding: 10px 20px;
+  border-radius: 10px;
+  font-weight: bold;
+  transition: background-color 0.3s ease;
+}
+
+.emergency-btn:hover {
+  background-color: #b71c1c;
+}
